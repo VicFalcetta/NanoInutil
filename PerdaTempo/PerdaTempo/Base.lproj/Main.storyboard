@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Botão-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Botão" id="BYZ-38-t0r" customClass="ViewController" customModule="PerdaTempo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BotaoGrande" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-QP-14F">
+                                <rect key="frame" x="108.5" y="354" width="197" height="198"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSt-0s-MQU">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="N59-8l-OiR"/>
+                                    <constraint firstAttribute="width" constant="200" id="cyw-CK-mMK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="botaoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfh-Gj-W5u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um Botão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kij-1W-A2O">
+                                <rect key="frame" x="139" y="144" width="136.5" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_Caixa" translatesAutoresizingMaskIntoConstraints="NO" id="LaF-gO-jUo">
+                                <rect key="frame" x="97" y="373" width="220" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="m2r-ZX-wql"/>
+                                    <constraint firstAttribute="width" constant="220" id="uMy-pJ-I3n"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-6k-yRX">
+                                <rect key="frame" x="157" y="653" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.71205437179999997" green="0.072718761859999995" blue="0.070523492990000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GKS-xS-pnT"/>
+                                    <constraint firstAttribute="width" constant="100" id="hDZ-iA-Zn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="voltarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FWb-Lw-ATt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2051698076805191" green="0.17563008701907332" blue="0.44328119881867156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RSt-0s-MQU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0hf-Co-T7T"/>
+                            <constraint firstItem="sZN-6k-yRX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Qu-AC-Zve"/>
+                            <constraint firstItem="kij-1W-A2O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ufe-xF-u3g"/>
+                            <constraint firstItem="LaF-gO-jUo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X9Y-6B-ahT"/>
+                            <constraint firstItem="sZN-6k-yRX" firstAttribute="top" secondItem="RSt-0s-MQU" secondAttribute="bottom" constant="100" id="YuA-QQ-Ezf"/>
+                            <constraint firstItem="LaF-gO-jUo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c41-0b-AuF"/>
+                            <constraint firstItem="UfX-QP-14F" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dOb-oT-5x1"/>
+                            <constraint firstItem="RSt-0s-MQU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fIA-Hd-K3H"/>
+                            <constraint firstItem="UfX-QP-14F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fQ9-dY-KSL"/>
+                            <constraint firstItem="kij-1W-A2O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pxl-o3-mTE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Botão" image="smiley.fill" catalog="system" id="A4J-QA-8iU"/>
+                    <connections>
+                        <outlet property="botaoImg" destination="RSt-0s-MQU" id="Ccz-15-pSF"/>
+                        <outlet property="caixaMusica" destination="LaF-gO-jUo" id="auP-7p-oe9"/>
+                        <outlet property="imagemDoBotao" destination="UfX-QP-14F" id="3hp-7I-MNx"/>
+                        <outlet property="labelTitulo" destination="kij-1W-A2O" id="4zO-04-f4I"/>
+                        <outlet property="voltarButton" destination="sZN-6k-yRX" id="ukx-JB-5v3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736.23188405797111" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1_Caixa" width="203" height="138"/>
+        <image name="BotaoGrande" width="197" height="198"/>
+        <image name="smiley.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
